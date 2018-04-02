@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andrew Traill</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Signika:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+</head>
+<body>
+  <header>Andrew Traill</header>
+  <nav>
+      <a href="#lol">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#yo">Contact</a>
+  </nav>
+  <main id="lol">
+    <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 col-xs-12 order-sm-2 order-2 order-md-1">
+          <h1>Hello!</h1>
+          <p>Welcome to my website. Im Andrew and I am currently a computer science student at heriot watt university in Edinburgh. Thanks for visiting my site. Here you can find an online portfolio of my creative work.</p>
+          <hr style = 'background-color:#000000; border-width:0; color:#000000; height:2px; lineheight:0; display: inline-block; text-align: left; width:90%;' />
+          <p>Please be sure to get in touch with me if you have any questions!</p>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-12 order-sm-1 order-1x">
+          <a href="#">
+          <img src="images\personIcon.jpg" alt="me">
+        </a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12" style="padding:0">
+            <img src="images\project1.jpg" alt="project 1">
+            <p class="imgText" >project 1</p>
+            <a class="overlay" href="">
+              <p class="imgText">project 1</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12" style="padding:0">
+            <img src="images\project2.jpg" alt="project 2">
+            <p class="imgText" >project 2</p>
+            <a class="overlay" href="">
+              <p class="imgText">project 2</p>
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 padding-0" style="padding:0">
+            <img  style="position:relative;"src="images\project3.jpg" alt="project 1">
+            <p class="imgText" >project 3</p>
+            <a class="overlay" href="">
+              <p class="imgText">project 3</p>
+            </a>
+           </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 padding-0" style="padding:0">
+              <img src="images\project4.jpg" alt="project 1">
+              <p class="imgText" >project 4</p>
+              <a class="overlay" href="">
+                <p class="imgText">project 4</p>
+              </a>
+          </div>
+        </div>
+    </div>
+      <a id="yo"></a>
+    <div id="contact">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+        <h1>Contact Me!</h1>
+        <p>I will reply to any questions as soon as possible. </p>
+        <div id="icons">
+          <i class="fa fa-instagram" ></i>
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-snapchat-square"></i>
+          <i class="fa fa-twitter"></i>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-6 col-sm-12 col-xs-12">
+      <div class="area">
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname">
+    <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+    <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" style="height:200px"></textarea>
+    <input type="submit" value="Submit">
+      </form>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+   </main>
+</body>
+</html>
